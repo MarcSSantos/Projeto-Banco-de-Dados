@@ -16,7 +16,6 @@ constraint funcionario_pk primary key (codigo_funcionario)
 
 );
 
-drop table hospedagem;
 
 create table hospedagem(
 status_hospedagem char(45),
@@ -27,15 +26,11 @@ constraint codigio_funcionario_fk foreign key (codigio_funcionario) references f
 );
 
 
-/*
-adicionar
 create table hospede_has_hospedagem(
-hospede_codigo_hospede varchar(45),
-hospedagem_status_hospedagem varchar(45),
-constraint hospede_codigo_hospede_pk primary key auto_increment (hospede_has_hospedagem),
-constraint hospedagem_status_hospedagem primary key auto_increment (hospedagem_status_hospedagem)
+codigo_hospede_pk varchar(45),
+status_hospedagem_pk varchar(45)
 );
-*/
+
 
 create table hospede(
 codigo_hospede char(45),
@@ -46,7 +41,7 @@ constraint hospede primary key (codigo_hospede),
 constraint codigio_funcionario_fk foreign key (codigio_funcionario) references funcionario (codigio_funcionario)
 );
 
-drop table quarto;
+
 create table quarto(
 status_quarto varchar(45),
 numero_quarto char(3),
@@ -56,7 +51,7 @@ constraint numero_quarto_pk primary key (status_quarto),
 constraint codigo_reserva_fk foreign key (codigo_reserva) references hospede (codigo_reserva)
 );
 
-drop table reserva;
+
 create table reserva(
 codigo_reserva char(10),
 data_reserva varchar(10),
@@ -69,7 +64,7 @@ constraint codigo_hospede_fk foreign key (codigo_hospede) references hospede (co
 constraint codigo_funcionario_fk foreign key (codigo_funcionario) references funcionario (codigo_funcionario)
 );
 
-drop table tipo_quarto;
+
 create table tipo_quarto(
 codigo_tipo_quarto char(10),
 acomodacao varchar(10),
