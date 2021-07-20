@@ -23,6 +23,17 @@ constraint status_hospedagem_pk primary key (status_hospedagem)
 
 );
 
+
+/*
+
+create table hospede_has_hospedagem(
+hospede_codigo_hospede varchar(45),
+hospedagem_status_hospedagem varchar(45),
+constraint hospede_codigo_hospede_pk primary key auto_increment (hospede_has_hospedagem),
+constraint hospedagem_status_hospedagem primary key auto_increment (hospedagem_status_hospedagem)
+);
+*/
+
 create table hospede(
 codigo_hospede char(45),
 nome varchar(45),
@@ -38,13 +49,15 @@ numero_quarto char(3),
 acomodacao varchar(10),
 constraint status_quarto_pk primary key (status_quarto)
 );
-
+drop table reserva;
 create table reserva(
 codigo_reserva char(10),
 data_reserva varchar(10),
 numero_quarto char(3),
 tipo_quarto varchar(10),
-constraint reserva_pk primary key (codigo_reserva)
+codigo_hospede varchar(10),
+constraint reserva_pk primary key (codigo_reserva),
+constraint codigo_hospede_fk foreign key (codigo_hospede) references hospede (codigo_hospede)
 );
 
 create table tipo_quarto(
