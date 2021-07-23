@@ -4,13 +4,11 @@ INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (223,'Lucas Vitoriano 
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (333,'Gizelle Guanabara Gomez');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (433,'José Ronaldo da Silva');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (501,'Graça Araujo de Lima');
-
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (342,'Tales Henrique Amadio');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (486,'Mario Vitoriano da Silva');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (435,'Marcia Guanabara Gomez');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (109,'José Carlos da Silva');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (657,'Graça Aranha de Souza');
-
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (853,'Gustavo Henrique Amadio');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (856,'Lucas Carlos Sá da Silva');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (546,'Gabriela Atunes Gomez');
@@ -52,7 +50,7 @@ INSERT INTO TIPO_QUARTO (codigo_tipo_quarto, acomodacao) VALUES (2,'2 Quartos');
 INSERT INTO TIPO_QUARTO (codigo_tipo_quarto, acomodacao) VALUES (3,'2 Quatos sendo 1 suíte'); 
 INSERT INTO TIPO_QUARTO (codigo_tipo_quarto, acomodacao) VALUES (4,'2 Quartos com 1 banheira de hidromassagem');
 
-/* corrigir essa parte  do quarto*/
+
 
 INSERT INTO QUARTO (numero_quarto, status_quarto) VALUES (1, 'preenchido');
 INSERT INTO QUARTO (numero_quarto, status_quarto) VALUES (2, 'preenchido');
@@ -75,20 +73,19 @@ INSERT INTO QUARTO (numero_quarto, status_quarto) VALUES (18, 'preenchido');
 INSERT INTO QUARTO (numero_quarto, status_quarto) VALUES (19, 'vago');
 INSERT INTO QUARTO (numero_quarto, status_quarto) VALUES (20, 'preenchido');
 
-/* corrigir essa parte  da hospedagem */
 
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('validada','debito');
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('negada', NULL);
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('validada','credito');
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('validada','debito');
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('validada','credito');
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('validada','debito');
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('validada','debito');
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('validada','debito');
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('validada','credito');
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('validada','credito');
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('validada','credito');
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('validada','credito');
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('validada','credito');
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('negada', NULL);
-INSERT INTO HOSPEDAGEM (status_hospedagem, forma_pagamento) VALUES ('negada', NULL);
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento) VALUES (1,'validada','debito');
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (2,'negada', NULL);
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (3,'validada','credito');
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (4,'validada','debito');
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (5,'validada','credito');
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (6,'validada','debito');
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (7,'validada','debito');
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (8,'validada','debito');
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (9,'validada','credito');
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (10,'validada','credito');
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (11,'validada','credito');
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (12,'validada','credito');
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (13,'validada','credito');
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (14,'negada', NULL);
+INSERT INTO HOSPEDAGEM (codigo_hospedagem,status_hospedagem, forma_pagamento) VALUES (15,'negada', NULL);

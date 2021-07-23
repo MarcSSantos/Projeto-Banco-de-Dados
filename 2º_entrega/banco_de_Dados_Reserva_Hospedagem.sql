@@ -1,11 +1,14 @@
 create database reservas_hospedagem;
 
+/*
 drop table funcionario;
+drop table hospede_has_hospedagem;
 drop table hospedagem;
 drop table hospede;
 drop table quarto;
 drop table reserva;
 drop table tipo_quarto;
+*/
 
 use reservas_hospedagem;
 
@@ -18,10 +21,11 @@ constraint funcionario_pk primary key (codigo_funcionario)
 
 
 create table hospedagem(
+codigo_hospedagem char(45),
 status_hospedagem char(45),
 forma_pagamento varchar(45),
 codigio_funcionario char(45),
-constraint status_hospedagem_pk primary key (status_hospedagem),
+constraint status_hospedagem_pk primary key (codigo_hospedagem),
 constraint codigio_funcionario_fk foreign key (codigio_funcionario) references funcionario (codigio_funcionario)
 );
 
@@ -37,16 +41,17 @@ codigo_hospede char(45),
 nome varchar(45),
 motivo_hospedagem varchar(45),
 numero_contato char(45),
+codigio_funcionario char(45),
 constraint hospede primary key (codigo_hospede),
 constraint codigio_funcionario_fk foreign key (codigio_funcionario) references funcionario (codigio_funcionario)
 );
 
-drop table quarto;
+
 create table quarto(
 numero_quarto varchar(45),
 status_quarto varchar(45),
 codigo_reserva char(45),
-constraint numero_quarto_pk primary key (status_quarto),
+constraint numero_quarto_pk primary key (numero_quarto),
 constraint codigo_reserva_fk foreign key (codigo_reserva) references hospede (codigo_reserva)
 );
 
