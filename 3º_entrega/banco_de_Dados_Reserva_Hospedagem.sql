@@ -48,7 +48,9 @@ create trigger tr_desconto
 before insert
 on hospedagem for each row 
 begin
-		if new.checkin = 'Thursday' then
+		if new.checkin != 'Sunday' and new.checkin != 'Saturday' 
+		   and new.checkin != 'friday' then
+			
 			set new.preco_desconto = (new.preco_normal * 0.95);
 		else
 			set new.preco_desconto = 'off';
@@ -62,6 +64,9 @@ DELIMITER ;
 
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout) 
 VALUES (4,'validada','debito',550.00,dayname('2021-08-05'), dayname('2021-08-07'));
+
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout) 
+VALUES (3,'validada','debito',550.00,dayname('2021-08-07'), dayname('2021-08-10'));
 
 select * from hospedagem;
 

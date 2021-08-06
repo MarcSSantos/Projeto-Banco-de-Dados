@@ -74,18 +74,34 @@ INSERT INTO QUARTO (numero_quarto, status_quarto) VALUES (19, 'vago');
 INSERT INTO QUARTO (numero_quarto, status_quarto) VALUES (20, 'preenchido');
 
 
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout) VALUES (1,'validada','debito',550.00,'segunda', 'sabado');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (2,'negada', NULL, 'terca', 'quinta');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (3,'validada','credito','quarta', 'terca');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (4,'validada','debito','quinta','domingo');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (5,'validada','credito','sexta', 'domingo');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (6,'validada','debito','sabado','quarta');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (7,'validada','debito','domingo','sabado');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (8,'validada','debito','domingo','quinta');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (9,'validada','credito','sabado','segunda');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (10,'validada','credito','sabado','sexta');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (11,'validada','credito','quarta','domingo');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem ,status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (12,'validada','credito','sexta','segunda');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (13,'validada','credito','segunda','sexta');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (14,'negada', NULL,'terca', 'segunda');
-INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, preco_desconto, checkin, checkout) VALUES (15,'negada', NULL,'sabado','terca');
+
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (1,'validada', 'debito', 550.00, dayname('2021-08-02'), dayname('2021-08-07'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (2,'negada', NULL, 550.00, dayname('2021-08-03'), dayname('2021-08-05'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (3,'validada','credito', 550.00,dayname('2021-08-06'), dayname('2021-08-10'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (4,'validada','debito', 550.00,dayname('2021-08-05'), dayname('2021-08-08'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (5,'validada','credito', 550.00,dayname('2021-08-13'), dayname('2021-08-15'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (6,'validada','debito', 550.00,dayname('2021-08-14'), dayname('2021-08-18'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (7,'validada','debito', 550.00,dayname('2021-08-15'), dayname('2021-08-21'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (8,'validada','debito', 550.00,dayname('2021-08-20'), dayname('2021-08-26'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (9,'validada','credito', 550.00,dayname('2021-08-21'), dayname('2021-08-23'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (10,'validada','credito', 550.00,dayname('2021-08-21'), dayname('2021-08-27'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (11,'validada','credito', 550.00,dayname('2021-08-25'), dayname('2021-08-29'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (12,'validada','credito', 550.00,dayname('2021-08-27'), dayname('2021-08-30'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (13,'validada','credito', 550.00,dayname('2021-08-23'), dayname('2021-08-27'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (14,'negada', NULL, 550.00,dayname('2021-08-24'), dayname('2021-08-30'));
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout)  
+VALUES (15,'negada', NULL, 550.00,dayname('2021-08-28'), dayname('2021-08-30'));
