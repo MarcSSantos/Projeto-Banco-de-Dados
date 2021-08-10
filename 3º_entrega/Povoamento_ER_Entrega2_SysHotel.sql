@@ -3,7 +3,7 @@ INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (103,'Gustavo Henrique
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (223,'Lucas Vitoriano da Silva');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (333,'Gizelle Guanabara Gomez');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (433,'José Ronaldo da Silva');
-INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (501,'Graça Araujo de Lima');
+INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALhospedagemUES (501,'Graça Araujo de Lima');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (342,'Tales Henrique Amadio');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (486,'Mario Vitoriano da Silva');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (435,'Marcia Guanabara Gomez');

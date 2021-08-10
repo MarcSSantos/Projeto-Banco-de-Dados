@@ -29,7 +29,7 @@ preco_normal decimal(10,2),
 preco_desconto decimal(10,2),
 checkin varchar (45),
 checkout varchar(45),
-codigio_funcionario char(45),
+codigio_funcionario int,
 constraint status_hospedagem_pk primary key (codigo_hospedagem),
 constraint codigio_funcionario_fk foreign key (codigio_funcionario) references funcionario (codigio_funcionario)
 );
