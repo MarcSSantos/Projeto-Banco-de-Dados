@@ -15,9 +15,7 @@ drop table tipo_quarto;
 
 create table funcionario(
 codigo_funcionario int,
-nome varchar(45),
-constraint funcionario_pk primary key (codigo_funcionario)
-
+nome varchar(45)
 );
 
 
@@ -29,9 +27,9 @@ preco_normal decimal(10,2),
 preco_desconto decimal(10,2),
 checkin varchar (45),
 checkout varchar(45),
-codigio_funcionario int,
-constraint status_hospedagem_pk primary key (codigo_hospedagem),
-constraint codigio_funcionario_fk foreign key (codigio_funcionario) references funcionario (codigio_funcionario)
+codigo_funcionario int,
+constraint status_hospedagem_pk primary key (codigo_funcionario),
+constraint codigo_funcionario_fk foreign key (codigo_funcionario) references funcionario (codigo_funcionario)
 );
 
 /* para corrigir
@@ -46,11 +44,11 @@ status_hospedagem_pk varchar(45)
 create table hospede(
 codigo_hospede int,
 nome varchar(45),
-motivo_hospedagem varchar(45),
+motivo_hospedagem varchar(60),
 numero_contato char(45),
-codigio_funcionario int,
+codigo_funcionario int,
 constraint hospede primary key (codigo_hospede),
-constraint codigio_funcionario_fk foreign key (codigio_funcionario) references funcionario (codigio_funcionario)
+constraint codigo_funcionario_fk foreign key (codigo_funcionario) references funcionario (codigo_funcionario)
 );
 
 
@@ -58,8 +56,10 @@ create table quarto(
 numero_quarto int,
 status_quarto varchar(45),
 codigo_reserva int,
+codigo_tipo_quarto int,
 constraint numero_quarto_pk primary key (numero_quarto),
-constraint codigo_reserva_fk foreign key (codigo_reserva) references hospede (codigo_reserva)
+constraint codigo_reserva_fk foreign key (codigo_reserva) references hospede (codigo_reserva),
+constraint codigo_tipo_quarto_fk foreign key (codigo_tipo_quarto) references quarto (codigo_tipo_quarto)
 );
 
 
@@ -80,8 +80,7 @@ create table tipo_quarto(
 codigo_tipo_quarto int,
 acomodacao varchar(45),
 numero_quarto varchar(45),
-constraint tipo_quarto_pk primary key (codigo_tipo_quarto),
-constraint numero_quarto_fk foreign key (numero_quarto) references quarto (numero_quarto)
+constraint tipo_quarto_pk primary key (codigo_tipo_quarto)
 );
 
 

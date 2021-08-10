@@ -1,4 +1,5 @@
 DELIMITER $$
+/* Esse tirgger da desconto de 5% para os clientes que fizerem checkin de segunda a quinta */
 
 create trigger tr_desconto 
 before insert
