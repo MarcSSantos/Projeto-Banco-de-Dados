@@ -47,8 +47,10 @@ nome varchar(45),
 motivo_hospedagem varchar(60),
 numero_contato char(45),
 codigo_funcionario int,
+codigo_hospedagem int,
 constraint hospede primary key (codigo_hospede),
-constraint codigo_funcionario_fk foreign key (codigo_funcionario) references funcionario (codigo_funcionario)
+constraint codigo_funcionario_fk foreign key (codigo_funcionario) references funcionario (codigo_funcionario),
+constraint codigo_hospedagem_fk foreign key (codigo_hospedagem) references hospedagem (codigo_hospedagem)
 );
 
 

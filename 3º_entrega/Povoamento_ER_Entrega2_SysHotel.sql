@@ -15,19 +15,19 @@ INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (546,'Gabriela Atunes 
 
 
 
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (1,'Felipe Garcia','Viagem de férias','+558198111-1098',103);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (2,'Lucas Velozo','Viagem de trabalho','+558198334-0990',223);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (3,'Ingrid Victória','Dia especial com esposa','+558198139-7678',333);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (4,'Vitoriano Henrique','Cheguei recentemente no estado e queria me abrigar','+558198113-5880',433);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (5,'Ygor Libriano','Visitando a região','+558199778-7788',501);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (6,'Iranir Fonseca','Viagem por conta do trabalho','+558195678-9685',342);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (7,'João Aluizio','Queria ver como um hotel funciona por dentro','+558199888-7784',486);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (8,'Nura Vitória','Não tinha onde passar a noite','+558196685-1124',435);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (9,'Amélia Santos','Não tenho tantos motivos','+558191168-5788',109);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (10,'Lucas Henrique','Viagem de mudança','+558199009-3357',657);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (11,'Receba Amants','Férias','+558191130-8906',853);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (12,'Bruna Oliveira','Região bonita para passar uns dias','+558193339-1345',856);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario) VALUES (13,'Diego Santiago','Não sei','+558192258-9907',546);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (1,'Felipe Garcia','Viagem de férias','+558198111-1098',103, 1);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (2,'Lucas Velozo','Viagem de trabalho','+558198334-0990',223, 2);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (3,'Ingrid Victória','Dia especial com esposa','+558198139-7678',333, 3);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (4,'Vitoriano Henrique','Cheguei recentemente no estado e queria me abrigar','+558198113-5880',433, 4);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (5,'Ygor Libriano','Visitando a região','+558199778-7788',501, 5);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (6,'Iranir Fonseca','Viagem por conta do trabalho','+558195678-9685',342, 6);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (7,'João Aluizio','Queria ver como um hotel funciona por dentro','+558199888-7784',486, 7);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (8,'Nura Vitória','Não tinha onde passar a noite','+558196685-1124',435, 8);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (9,'Amélia Santos','Não tenho tantos motivos','+558191168-5788',109, 9);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (10,'Lucas Henrique','Viagem de mudança','+558199009-3357',657, 10);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (11,'Receba Amants','Férias','+558191130-8906',853, 11);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (12,'Bruna Oliveira','Região bonita para passar uns dias','+558193339-1345',856, 12);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (13,'Diego Santiago','Não sei','+558192258-9907',546, 13);
 
 
 
@@ -70,29 +70,29 @@ INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_qu
 
 
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (1,'validada', 'debito', 550.00, dayname('2021-08-02'), dayname('2021-08-07'), 103);
+VALUES (1,'validada', 'debito', 500.00, dayname('2021-08-02'), dayname('2021-08-07'), 103);
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (2,'negada', NULL, 550.00, dayname('2021-08-03'), dayname('2021-08-05'), 223);
+VALUES (2,'negada', 'debito', 200.00, dayname('2021-08-03'), dayname('2021-08-05'), 223);
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (3,'validada','credito', 550.00,dayname('2021-08-06'), dayname('2021-08-10'), 333);
+VALUES (3,'validada','credito', 400.00,dayname('2021-08-06'), dayname('2021-08-10'), 333);
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (4,'validada','debito', 550.00,dayname('2021-08-05'), dayname('2021-08-08'), 433);
+VALUES (4,'validada','debito', 300.00,dayname('2021-08-05'), dayname('2021-08-08'), 433);
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (5,'validada','credito', 550.00,dayname('2021-08-13'), dayname('2021-08-15'), 501);
+VALUES (5,'negada','credito', 200.00,dayname('2021-08-13'), dayname('2021-08-15'), 501);
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (6,'validada','debito', 550.00,dayname('2021-08-14'), dayname('2021-08-18'), 342);
+VALUES (6,'validada','debito', 600.00,dayname('2021-08-12'), dayname('2021-08-18'), 342);
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (7,'validada','debito', 550.00,dayname('2021-08-15'), dayname('2021-08-21'), 486);
+VALUES (7,'validada','debito', 600.00,dayname('2021-08-15'), dayname('2021-08-21'), 486);
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (8,'validada','debito', 550.00,dayname('2021-08-20'), dayname('2021-08-26'), 435);
+VALUES (8,'validada','debito', 600.00,dayname('2021-08-20'), dayname('2021-08-26'), 435);
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (9,'validada','credito', 550.00,dayname('2021-08-21'), dayname('2021-08-23'), 109);
+VALUES (9,'validada','credito', 400.00,dayname('2021-08-19'), dayname('2021-08-23'), 109);
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (10,'validada','credito', 550.00,dayname('2021-08-21'), dayname('2021-08-27'), 657);
+VALUES (10,'negada','credito', 600.00,dayname('2021-08-21'), dayname('2021-08-27'), 657);
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (11,'validada','credito', 550.00,dayname('2021-08-25'), dayname('2021-08-29'), 853);
+VALUES (11,'validada','credito', 300.00,dayname('2021-08-25'), dayname('2021-08-29'), 853);
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (12,'validada','credito', 550.00,dayname('2021-08-27'), dayname('2021-08-30'), 856);
+VALUES (12,'validada','credito', 300.00,dayname('2021-08-27'), dayname('2021-08-30'), 856);
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (13,'validada','credito', 550.00,dayname('2021-08-23'), dayname('2021-08-27'), 546);
+VALUES (13,'negada','credito', 400.00,dayname('2021-08-23'), dayname('2021-08-27'), 546);
 
