@@ -1,4 +1,3 @@
-
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (103,'Gustavo Henrique Amadio');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (223,'Lucas Vitoriano da Silva');
 INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (333,'Gizelle Guanabara Gomez');
@@ -15,19 +14,19 @@ INSERT INTO FUNCIONARIO (codigo_funcionario, nome) VALUES (546,'Gabriela Atunes 
 
 
 
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (1,'Felipe Garcia','Viagem de férias','+558198111-1098',103, 1);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (2,'Lucas Velozo','Viagem de trabalho','+558198334-0990',223, 2);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (3,'Ingrid Victória','Dia especial com esposa','+558198139-7678',333, 3);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (4,'Vitoriano Henrique','Cheguei recentemente no estado e queria me abrigar','+558198113-5880',433, 4);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (5,'Ygor Libriano','Visitando a região','+558199778-7788',501, 5);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (6,'Iranir Fonseca','Viagem por conta do trabalho','+558195678-9685',342, 6);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (7,'João Aluizio','Queria ver como um hotel funciona por dentro','+558199888-7784',486, 7);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (8,'Nura Vitória','Não tinha onde passar a noite','+558196685-1124',435, 8);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (9,'Amélia Santos','Não tenho tantos motivos','+558191168-5788',109, 9);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (10,'Lucas Henrique','Viagem de mudança','+558199009-3357',657, 10);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (11,'Receba Amants','Férias','+558191130-8906',853, 11);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (12,'Bruna Oliveira','Região bonita para passar uns dias','+558193339-1345',856, 12);
-INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato, codigo_funcionario, codigo_hospedagem) VALUES (13,'Diego Santiago','Não sei','+558192258-9907',546, 13);
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (1,'Felipe Garcia','Viagem de férias','+558198111-1098');
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (2,'Lucas Velozo','Viagem de trabalho','+558198334-0990');
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (3,'Ingrid Victória','Dia especial com esposa','+558198139-7678');
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (4,'Vitoriano Henrique','Cheguei recentemente no estado e queria me abrigar','+558198113-5880');
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (5,'Ygor Libriano','Visitando a região','+558199778-7788');
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (6,'Iranir Fonseca','Viagem por conta do trabalho','+558195678-9685');
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (7,'João Aluizio','Queria ver como um hotel funciona por dentro','+558199888-7784');
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (8,'Nura Vitória','Não tinha onde passar a noite','+558196685-1124');
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (9,'Amélia Santos','Não tenho tantos motivos','+558191168-5788');
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (10,'Lucas Henrique','Viagem de mudança','+558199009-3357');
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (11,'Receba Amants','Férias','+558191130-8906');
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (12,'Bruna Oliveira','Região bonita para passar uns dias','+558193339-1345');
+INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VALUES (13,'Diego Santiago','Não sei','+558192258-9907');
 
 
 
@@ -53,19 +52,19 @@ INSERT INTO TIPO_QUARTO (codigo_tipo_quarto, acomodacao) VALUES (4,'2 Quartos co
 
 
 
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (1, 'preenchido', 1111,4);
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (2, 'preenchido', 2222,3);
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (3, 'vago', 3333,2);
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (4, 'preenchido', 4444,1);
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (5, 'preenchido', 5555,2);
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (6, 'preenchido', 6666,4);
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (7, 'vago', 7777,1);
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (8, 'preenchido', 8888,3);
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (9, 'preenchido', 9999,1);
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (10, 'vago', 1010,4);
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (11, 'preenchido', 1212,2);
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (12, 'vago', 1313,3);
-INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva, codigo_tipo_quarto) VALUES (13, 'preenchido', 1414,1);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva ) VALUES (1, 'preenchido', 1111);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva ) VALUES (2, 'preenchido', 2222);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva ) VALUES (3, 'vago', 3333);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva ) VALUES (4, 'preenchido', 4444);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva) VALUES (5, 'preenchido', 5555);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva ) VALUES (6, 'preenchido', 6666);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva ) VALUES (7, 'vago', 7777);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva ) VALUES (8, 'preenchido', 8888);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva ) VALUES (9, 'preenchido', 9999);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva ) VALUES (10, 'vago', 1010);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva ) VALUES (11, 'preenchido', 1212);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva ) VALUES (12, 'vago', 1313);
+INSERT INTO QUARTO (numero_quarto, status_quarto, codigo_reserva ) VALUES (13, 'preenchido', 1414);
 
 
 
