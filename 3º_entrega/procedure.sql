@@ -12,6 +12,8 @@ DELIMITER // ;
 
 call mudar_nome(1, 'Marcson Santos');
 
+select * from hospede;
+
 
 /* Essa procedure mostra a quantidade de hospedagens negadas */
 DELIMITER //

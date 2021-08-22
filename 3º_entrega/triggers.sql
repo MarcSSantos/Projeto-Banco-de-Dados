@@ -17,3 +17,26 @@ end $$
 		
 DELIMITER ;
 
+
+DELIMITER $$
+create trigger checar_valor_pagamento 
+before insert
+on hospedagem for each row 
+begin
+    
+        if new.preco_normal >= 100 then 
+			set new.preco_normal = new.preco_normal;
+            
+		else
+			SIGNAL SQLSTATE '45000' 
+			SET MESSAGE_TEXT = "Hospedagens menores que R$ 100,00 não podem ser inseridas";
+            
+        END IF;
+end $$
+DELIMITER ;
+
+
+/*insert de testes
+
+INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
+VALUES (14,'validada', 'debito', 99.99, dayname('2021-08-02'), dayname('2021-08-07'), 479); */
