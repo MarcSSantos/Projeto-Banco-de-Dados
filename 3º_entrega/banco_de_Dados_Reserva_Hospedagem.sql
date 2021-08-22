@@ -1,18 +1,6 @@
 create database reservas_hospedagem;
 use reservas_hospedagem;
 
-/*
-drop table funcionario;
-drop table hospede_has_hospedagem;
-drop table hospedagem;
-drop table hospede;
-drop table quarto;
-drop table reserva;
-drop table tipo_quarto;
-*/
-
-
-
 create table funcionario(
 codigo_funcionario int,
 nome varchar(45),

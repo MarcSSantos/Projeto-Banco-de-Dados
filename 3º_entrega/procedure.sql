@@ -19,23 +19,27 @@ create procedure exibi_quantidade_status_negada (out quantidade int)
 begin
 select count(status_hospedagem) into quantidade
 from hospedagem
-join hospede
-on hospedagem.codigo_hospedagem = hospede.codigo_hospedagem and
-hospedagem.status_hospedagem = 'negada';
+where status_hospedagem = 'negada';
 end //
 DELIMITER // ;
 
-CALL exibi_quantidade_status_negada(@total);
-SELECT @total;
+CALL exibi_quantidade_status_negada(@total_negada);
+SELECT @total_negada;
 
 
-/* testes */
 
-select nome
-from hospede
-join reserva
-	on 	hospede.codigo_funcionario = reserva.codigo_funcionario
+/* Essa procedure mostra a quantidade de hospedagens validadas */
 
+DELIMITER //
+create procedure exibi_quantidade_status_validada (out quantidade int)
+begin
+select count(status_hospedagem) into quantidade
+from hospedagem
+where status_hospedagem = 'validada';
+end //
+DELIMITER // ;
 
+CALL exibi_quantidade_status_validada(@total_validada);
+SELECT @total_validada;
 
 
