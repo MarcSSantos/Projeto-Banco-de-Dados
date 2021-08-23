@@ -3,8 +3,7 @@ use reservas_hospedagem;
 
 create table funcionario(
 codigo_funcionario int,
-nome varchar(45),
-primary key (codigo_funcionario)
+nome varchar(45)
 );
 
 

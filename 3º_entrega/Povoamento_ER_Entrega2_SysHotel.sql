@@ -30,19 +30,28 @@ INSERT INTO HOSPEDE (codigo_hospede, nome, motivo_hospedagem, numero_contato) VA
 
 
 
-INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (1111,'13/08/2021','01', 3, 1, 103);
-INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (2222,'29/08/2021','04', 3, 2, 223);
-INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (3333,'29/08/2021','13', 3, 3, 333);
-INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (4444,'16/08/2021','20', 1, 4, 433);
-INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (5555,'21/08/2021','02', 2, 5, 501);
-INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (6666,'27/08/2021','05', 4, 6, 342);
-INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (7777,'13/08/2021','06', 1, 7, 486);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (1111,'13/07/2021','01', 3, 1, 103);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (2222,'10/08/2021','04', 3, 2, 223);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (3333,'01/08/2021','13', 3, 3, 333);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (4444,'16/06/2021','20', 1, 4, 433);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (5555,'21/07/2021','02', 2, 5, 501);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (6666,'27/05/2021','05', 4, 6, 342);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (7777,'10/08/2021','06', 1, 7, 486);
 INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (8888,'19/08/2021','08', 3, 8, 435);
 INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (9999,'14/08/2021','09', 2, 9, 109);
 INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (1010,'16/08/2021','11', 1, 10, 657);
-INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (1212,'16/08/2021','15', 4, 11, 853);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (1212,'19/08/2021','15', 4, 11, 853);
 INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (1313,'22/08/2021','16', 2, 12, 856);
-INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (1414,'25/08/2021','18', 3, 13, 546);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (1414,'17/08/2021','18', 3, 13, 546);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (9876,'25/09/2021','98', 1, 13, 546);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (8765,'25/10/2021','77', 2, 13, 546);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (6435,'16/03/2021','20', 1, 4, 433);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (8563,'16/04/2021','20', 1, 4, 342);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (9606,'16/05/2021','20', 1, 4, 109);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (3465,'30/08/2021','06', 1, 7, 486);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (7576,'13/06/2021','08', 3, 8, 435);
+
+
 
 
 INSERT INTO TIPO_QUARTO (codigo_tipo_quarto, acomodacao) VALUES (1,'1 Quarto');
