@@ -43,7 +43,7 @@ INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, c
 INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (1212,'19/08/2021','15', 4, 11, 853);
 INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (1313,'22/08/2021','16', 2, 12, 856);
 INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (1414,'17/08/2021','18', 3, 13, 546);
-INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (9876,'25/09/2021','98', 1, 13, 546);
+INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (9876,'25/09/2021','98', 1, 13, 223);
 INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (8765,'25/10/2021','77', 2, 13, 546);
 INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (6435,'16/03/2021','20', 1, 4, 433);
 INSERT INTO RESERVA (codigo_reserva, data_reserva, numero_quarto, tipo_quarto, codigo_hospede, codigo_funcionario) VALUES (8563,'16/04/2021','20', 1, 4, 342);

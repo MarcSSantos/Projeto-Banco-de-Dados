@@ -37,8 +37,8 @@ begin
 end $$
 DELIMITER ;
 
-
-/*insert de testes
+/*
+insert de testes
 
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
 VALUES (20,'validada', 'debito', 99.99, dayname('2021-08-02'), dayname('2021-08-07'), 501); */
