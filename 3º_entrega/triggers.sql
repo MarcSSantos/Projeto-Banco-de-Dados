@@ -9,6 +9,7 @@ begin
 		   and new.checkin != 'friday' then
 			
 			set new.preco_desconto = (new.preco_normal * 0.95);
+           
 		else
 			set new.preco_desconto = 'off';
 		END IF;
@@ -28,6 +29,7 @@ begin
 			set new.preco_normal = new.preco_normal;
             
 		else
+			
 			SIGNAL SQLSTATE '45000' 
 			SET MESSAGE_TEXT = "Hospedagens menores que R$ 100,00 não podem ser inseridas";
             
@@ -39,4 +41,4 @@ DELIMITER ;
 /*insert de testes
 
 INSERT INTO HOSPEDAGEM (codigo_hospedagem, status_hospedagem, forma_pagamento, preco_normal, checkin, checkout, codigo_funcionario)  
-VALUES (14,'validada', 'debito', 99.99, dayname('2021-08-02'), dayname('2021-08-07'), 479); */
+VALUES (20,'validada', 'debito', 99.99, dayname('2021-08-02'), dayname('2021-08-07'), 501); */
